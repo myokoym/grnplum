@@ -1,0 +1,1 @@
+require "grnplum/generator/c"

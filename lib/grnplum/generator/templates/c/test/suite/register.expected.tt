@@ -1,0 +1,2 @@
+plugin_register <%= config[:plugin_name] %>/<%= config[:plugin_name] %>
+[[0,0.0,0.0],true]

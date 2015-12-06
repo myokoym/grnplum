@@ -1,0 +1,1 @@
+plugin_register <%= config[:plugin_name] %>/<%= config[:plugin_name] %>
