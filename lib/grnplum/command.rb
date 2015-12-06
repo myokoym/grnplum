@@ -34,10 +34,15 @@ module Grnplum
     end
 
     desc "list", "List built plugins"
+    option :verbose, :type => :boolean, :aliases => "-v", :desc => "show detail path"
     def list
       Dir.glob("#{plugins_dir}/*") do |path|
+        if options[:verbose]
+          puts(path)
+        else
         basename = File.basename(path)
         puts(basename)
+        end
       end
     end
 
