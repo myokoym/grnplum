@@ -74,6 +74,12 @@ module Grnplum
     end
 
     def install_dir
+      unless File.file?(config_path)
+        $stderr.puts("#{$0}: Please set INSTALL_DIR.")
+        $stderr.puts("Usage: #{$0} global INSTALL_DIR")
+        $stderr.puts(" e.g.: #{$0} global /tmp/local")
+        exit(false)
+      end
       File.read(config_path)
     end
 
