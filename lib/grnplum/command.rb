@@ -60,6 +60,13 @@ module Grnplum
       end
     end
 
+    desc "uninstall NAME", "Uninstall a plugin"
+    def uninstall(name)
+      Dir.chdir(plugin_dir(name)) do
+        system("make", "uninstall")
+      end
+    end
+
     desc "version", "Show version"
     def version
       puts(VERSION)
