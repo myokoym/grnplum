@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/grnplum.svg)](http://badge.fury.io/rb/grnplum)
 
-A Groonga plugin manager.
+A [Groonga](http://groonga.org/) plugin manager.
 
 ## Installation
 
